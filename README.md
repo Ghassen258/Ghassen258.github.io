@@ -4,7 +4,7 @@ A responsive, recruiter-oriented portfolio showcasing software projects, technic
 
 ## What is included
 
-- Five documented project case studies: EchoVault, Linkfall, Forked Futures, Diff Detective and MiniDB, including four live browser demos.
+- Six documented project case studies: EchoVault, Linkfall, Forked Futures, Diff Detective, MiniDB and AlgoHunter, including five live browser demos.
 - Filters by project domain (**Web & Interactive**, **Games & Storytelling**, **Console & CLI**, **Systems & Tooling**) and actual project technology.
 - Full-text project search; a modal for architecture, challenges, key features, contributions, and limitations.
 - About, engineering background, technical stack and recruiter contact section.
@@ -38,11 +38,11 @@ Node.js is only needed for tests; the site itself is static.
 4. Open **Actions → Publish portfolio to GitHub Pages → Run workflow**, choose `main`, and start the run. GitHub may also start a run automatically on push.
 5. After a successful build and deployment, visit **https://ghassen258.github.io/**.
 
-The Pages workflow runs all six tests, validates the JavaScript, and publishes only the website assets (`index.html`, `styles.css`, `app.js`, `data.js`, `assets/`). Source and tests stay in the repository but are not deployed. Future changes to the site automatically trigger a new deployment.
+The Pages workflow runs the automated tests, validates the JavaScript, and publishes only the website assets (`index.html`, `styles.css`, `app.js`, `data.js`, `assets/`). Source and tests stay in the repository but are not deployed. Future changes to the site automatically trigger a new deployment.
 
 ## Adding future projects
 
-The collection deliberately includes only the five projects built for this portfolio so far. New verified projects can be appended to the `projects` array in `data.js`, along with their technical details, demo URL and illustration in `app.js`. Category counts and technology options update automatically.
+The collection deliberately includes only the six projects built for this portfolio so far. New verified projects can be appended to the `projects` array in `data.js`, along with their technical details, demo URL and illustration in `app.js`. Category counts and technology options update automatically.
 
 ## Editing the portfolio
 

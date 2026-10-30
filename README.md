@@ -4,7 +4,7 @@ A responsive, recruiter-oriented portfolio showcasing software projects, technic
 
 ## What is included
 
-- Four documented project case studies: EchoVault, Linkfall, Forked Futures and Diff Detective, including three playable/live browser demos.
+- Five documented project case studies: EchoVault, Linkfall, Forked Futures, Diff Detective and MiniDB, including four live browser demos.
 - Filters by project domain (**Web & Interactive**, **Games & Storytelling**, **Console & CLI**, **Systems & Tooling**) and actual project technology.
 - Full-text project search; a modal for architecture, challenges, key features, contributions, and limitations.
 - About, engineering background, technical stack and recruiter contact section.
@@ -42,7 +42,7 @@ The Pages workflow runs all six tests, validates the JavaScript, and publishes o
 
 ## Adding future projects
 
-The collection deliberately includes only the four projects built for this portfolio so far. New verified projects can be appended to the `projects` array in `data.js`, along with their technical details, demo URL and illustration in `app.js`. Category counts and technology options update automatically.
+The collection deliberately includes only the five projects built for this portfolio so far. New verified projects can be appended to the `projects` array in `data.js`, along with their technical details, demo URL and illustration in `app.js`. Category counts and technology options update automatically.
 
 ## Editing the portfolio
 

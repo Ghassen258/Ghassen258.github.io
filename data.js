@@ -83,6 +83,27 @@ export const projects = [
     source: 'https://github.com/Ghassen258/forked-futures',
     demo: 'https://ghassen258.github.io/forked-futures/',
     accent: 'rose'
+  },
+  {
+    id: 'minidb',
+    number: '05',
+    name: 'MiniDB',
+    kicker: 'C++20 database engine · WebAssembly',
+    tagline: 'A tiny database, built from first principles.',
+    summary: 'A hand-built relational database with a SQL parser, typed rows, persistent append-only storage and B+ tree primary-key indexes—now runnable in the browser.',
+    category: ['console', 'systems', 'web'],
+    featured: true,
+    status: 'Try SQL in browser',
+    technologies: ['C++20', 'B+ Tree', 'SQL', 'WebAssembly', 'CMake', 'CTest'],
+    highlights: ['Handwritten SQL tokenizer and parser with typed schemas', 'B+ tree primary-key lookups and EXPLAIN query plans', 'Checksummed append-only storage with exportable .mdb files'],
+    role: 'SQL parser, B+ tree, storage engine, CLI, WebAssembly adapter and automated tests',
+    challenge: 'Understand how a database parses queries, locates records and preserves changes without outsourcing the core behavior to SQLite.',
+    solution: 'Implemented schema validation and SQL operations in C++20, a balanced in-memory B+ tree for indexed lookup, and a checksummed binary log that can be compacted and replayed.',
+    architecture: 'Native CLI and browser workbench share the same C++ parser, B+ tree and storage engine. Emscripten exposes a small bridge to JavaScript; browser state can be exported as a native database file.',
+    tradeoff: 'Educational, single-process engine: no joins or multi-statement transactions. The B+ tree is rebuilt in RAM on startup, and the browser demo uses a size-limited local sandbox.',
+    source: 'https://github.com/Ghassen258/minidb',
+    demo: 'https://ghassen258.github.io/minidb/',
+    accent: 'green'
   }
 
 ];

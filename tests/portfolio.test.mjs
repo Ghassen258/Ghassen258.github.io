@@ -5,9 +5,9 @@ import { projects, categories } from '../data.js';
 
 const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
 const script = readFileSync(new URL('../app.js', import.meta.url), 'utf8');
-test('the portfolio contains exactly the four selected projects, documented for future expansion', () => {
-  assert.deepEqual(projects.map(p => p.id), ['linkfall', 'echovault', 'diff-detective', 'forked-futures']);
-  assert.equal(projects.length, 4);
+test('the portfolio contains exactly the five selected projects, documented for future expansion', () => {
+  assert.deepEqual(projects.map(p => p.id), ['linkfall', 'echovault', 'diff-detective', 'forked-futures', 'minidb']);
+  assert.equal(projects.length, 5);
   assert.equal(new Set(projects.map(p => p.id)).size, projects.length);
   for (const p of projects) {
     for (const field of ['name','summary','challenge','solution','architecture','tradeoff','role','status']) assert.ok(typeof p[field] === 'string' && p[field].length >= (field === 'name' || field === 'status' ? 3 : 9), `${p.id} missing ${field}`);
@@ -16,9 +16,9 @@ test('the portfolio contains exactly the four selected projects, documented for 
     assert.ok(p.category.every(id => categories.some(c => c.id === id)), `${p.id} includes an unknown category`);
   }
 });
-test('the three browser demos have valid demo links', () => {
+test('the four browser demos have valid demo links', () => {
   const demos = projects.filter(p => p.demo);
-  assert.equal(demos.length, 3);
+  assert.equal(demos.length, 4);
   assert.ok(demos.every(p => p.demo.startsWith('https://ghassen258.github.io/')));
 });
 test('project links point to real repository identifiers or are explicitly private', () => {

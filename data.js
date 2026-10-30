@@ -104,7 +104,7 @@ export const projects = [
     source: 'https://github.com/Ghassen258/minidb',
     demo: 'https://ghassen258.github.io/minidb/',
     accent: 'green'
-  }
+  },
   {
     id: 'algohunter',
     number: '06',

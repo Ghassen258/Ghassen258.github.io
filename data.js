@@ -105,6 +105,27 @@ export const projects = [
     demo: 'https://ghassen258.github.io/minidb/',
     accent: 'green'
   }
+  {
+    id: 'algohunter',
+    number: '06',
+    name: 'AlgoHunter',
+    kicker: 'Evolutionary AI · Python',
+    tagline: 'Teach evolution to find an algorithm’s breaking point.',
+    summary: 'An adversarial search laboratory that evolves challenging sorting inputs using genetic algorithms, measures comparison counts, and benchmarks evolution against a fair random-search control.',
+    category: ['web', 'systems'],
+    featured: true,
+    status: 'Run AI experiments',
+    technologies: ['Python', 'Genetic Algorithms', 'Pyodide', 'WebAssembly', 'JavaScript', 'unittest'],
+    highlights: ['Evolutionary search with crossover, mutation, elitism and tournament selection', 'Four instrumented sorting algorithms and equal-budget random-search baselines', 'Reproducible seeded experiments with an interactive browser lab'],
+    role: 'Python evolutionary engine, instrumentation, experimental controls, browser integration and tests',
+    challenge: 'Automatically discover difficult inputs instead of assuming the textbook worst case, and show whether evolutionary search really outperforms random sampling.',
+    solution: 'Represent inputs as permutations and optimize measured comparison counts using a genetic algorithm, tracking generation-by-generation fitness against a matched-budget baseline.',
+    architecture: 'The same standard-library Python core runs in the CLI and inside a Web Worker with Pyodide. A static JavaScript interface visualizes fitness, candidate permutations and downloadable experiment reports.',
+    tradeoff: 'Uses deterministic comparison counts rather than wall-clock timing. Evolution is a heuristic and may lose to random search; browser execution downloads the Pyodide runtime.',
+    source: 'https://github.com/Ghassen258/algohunter',
+    demo: 'https://ghassen258.github.io/algohunter/',
+    accent: 'orange'
+  }
 
 ];
 
